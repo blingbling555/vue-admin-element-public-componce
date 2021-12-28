@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'SelectAddFixedEnd',
   data() {
     return {
       options: [],

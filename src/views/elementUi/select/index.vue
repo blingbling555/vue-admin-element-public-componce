@@ -1,6 +1,6 @@
 <template>
-  <el-tabs type="border-card" class="tab-container">
-    <el-tab-pane label="固定尾部">
+  <el-tabs type="border-card" class="tab-container" v-model="activeName">
+    <el-tab-pane label="固定尾部" name="fixedBottom">
       <SelectAddFixedEnd></SelectAddFixedEnd>
     </el-tab-pane>
   </el-tabs>
@@ -12,6 +12,11 @@ export default {
   name: 'Index',
   components: {
     SelectAddFixedEnd
+  },
+  data() {
+    return {
+      activeName: 'fixedBottom'
+    }
   }
 }
 </script>
